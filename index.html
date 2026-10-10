@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jerte Oy</title>
+    <meta name="description" content="Jerte Oy – sovellukset. Passikuva: passikuva Poliisin ohjeen mukaan." />
+    <link rel="icon" href="icon.svg" type="image/svg+xml" />
+    <style>
+      :root {
+        --bg: #f3f5f8;
+        --surface: #ffffff;
+        --text: #14181f;
+        --muted: #5a6472;
+        --border: #dbe1e8;
+        --primary: #0b57d0;
+        --shadow: 0 1px 2px rgba(16, 24, 40, 0.05), 0 6px 20px rgba(16, 24, 40, 0.06);
+        color-scheme: light;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0f1217;
+          --surface: #181c23;
+          --text: #e8ebf0;
+          --muted: #9aa4b2;
+          --border: #2c333e;
+          --primary: #7aa7ff;
+          --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.25);
+          color-scheme: dark;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        -webkit-text-size-adjust: 100%;
+      }
+      main {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 48px 16px 40px;
+      }
+      h1 {
+        margin: 0;
+        font-size: 2.4rem;
+        line-height: 1.2;
+        letter-spacing: -0.01em;
+      }
+      h2 {
+        margin: 32px 0 12px;
+        color: var(--muted);
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      p {
+        margin: 6px 0;
+      }
+      a {
+        color: var(--primary);
+      }
+      .app {
+        display: flex;
+        gap: 18px;
+        align-items: flex-start;
+        padding: 20px;
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        background: var(--surface);
+        box-shadow: var(--shadow);
+      }
+      .app-icon {
+        flex: none;
+        width: 64px;
+        height: 64px;
+      }
+      .app h3 {
+        margin: 0 0 4px;
+        font-size: 1.3rem;
+      }
+      .muted {
+        color: var(--muted);
+      }
+      .note {
+        color: var(--muted);
+        font-size: 0.85rem;
+      }
+      .privacy {
+        display: inline-block;
+        margin-top: 10px;
+        font-weight: 600;
+      }
+      footer {
+        margin-top: 40px;
+        color: var(--muted);
+        font-size: 0.85rem;
+      }
+      @media (max-width: 480px) {
+        main {
+          padding-top: 32px;
+        }
+        .app {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Jerte Oy</h1>
+
+      <h2>Sovellukset · Apps</h2>
+      <section class="app">
+        <svg xmlns="http://www.w3.org/2000/svg" class="app-icon" aria-hidden="true" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="icover" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8c2433"/><stop offset="1" stop-color="#5f1622"/></linearGradient>
+    <linearGradient id="igold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f2d58a"/><stop offset=".55" stop-color="#d4a94e"/><stop offset="1" stop-color="#b8892f"/></linearGradient>
+    <clipPath id="iemblem"><circle cx="32.84" cy="29.54" r="7.94"/></clipPath>
+  </defs>
+  <rect x="11.61" y="2.65" width="42.25" height="60" rx="2.69" fill="#efe5cf"/>
+  <rect x="10.13" y="1.33" width="42.25" height="60" rx="2.69" fill="url(#icover)"/>
+  <rect x="10.13" y="1.33" width="6.33" height="60" rx="2.69" fill="#4d111b"/>
+  <rect x="13.30" y="1.33" width="3.16" height="60" fill="url(#icover)"/>
+  <rect x="13.06" y="1.33" width="0.48" height="60" fill="#3e0d16" opacity=".6"/>
+  <rect x="22.29" y="9.44" width="21.10" height="1.44" rx="0.72" fill="url(#igold)"/>
+  <rect x="25.41" y="12.74" width="14.85" height="1.44" rx="0.72" fill="url(#igold)"/>
+  <circle cx="32.84" cy="29.54" r="8.45" fill="none" stroke="url(#igold)" stroke-width="1.02"/>
+  <g clip-path="url(#iemblem)" fill="url(#igold)">
+    <ellipse cx="32.84" cy="26.84" rx="3.11" ry="3.96"/>
+    <path d="M25.04 37.99 C25.64 32.54 28.64 31.34 32.84 31.34 S40.04 32.54 40.64 37.99Z"/>
+  </g>
+  <rect x="23.85" y="42.44" width="17.97" height="1.44" rx="0.72" fill="url(#igold)"/>
+  <g fill="none" stroke="url(#igold)" stroke-width="0.81">
+    <rect x="27.76" y="49.10" width="10.16" height="5.86" rx="0.70"/>
+    <circle cx="32.84" cy="52.03" r="1.75"/>
+    <path d="M27.76 52.03H31.08M34.60 52.03H37.92"/>
+  </g></svg>
+        <div>
+          <h3>Passikuva</h3>
+          <p>
+            Passikuva auttaa ottamaan passikuvan, joka täyttää Poliisin passikuvaohjeen mitat ja
+            laatuvaatimukset. Kuvat käsitellään vain puhelimessa.
+          </p>
+          <p class="muted" lang="en">
+            Passikuva helps you take a passport photo that meets the Finnish Police requirements.
+            Photos are processed only on your phone.
+          </p>
+          <p class="note">
+            Passikuva ei ole Poliisin tai muun viranomaisen sovellus. ·
+            <span lang="en">Not an app of the Finnish Police or any other authority.</span>
+          </p>
+          <a class="privacy" href="privacy.html">Tietosuojaseloste · Privacy policy →</a>
+        </div>
+      </section>
+
+      <h2>Yhteystiedot · Contact</h2>
+      <p><a href="mailto:jerteoy@protonmail.com">jerteoy@protonmail.com</a></p>
+
+      <footer>© 2026 Jerte Oy</footer>
+    </main>
+  </body>
+</html>
